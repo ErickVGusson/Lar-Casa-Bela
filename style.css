@@ -11,14 +11,14 @@
 .sociais {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     gap: 10px;
 }
 
 .sociais img {
-    width: 20px;
+    width: 40px;
 }
 
 nav {
@@ -119,4 +119,70 @@ main div h1 {
 
 main div img {
     margin-bottom: 30px;
+}
+
+.text{
+    text-align: center;
+    font-size: 13px;
+}
+
+.titulo{
+    color: green;
+    font-size: 35px;
+}
+
+.fundo1{
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(33, 167, 0, 0.603);
+    margin-top: 110px;
+    font-size: 20px;
+}
+
+.fundo1 h2{
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 0px solid;
+    width: 150px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.botao{
+    margin-top: 50px;
+}
+
+#mensagem{
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 310px;
+    height: 100px;
+    padding-left: 115px;
+}
+
+#email{
+margin-left: 5px;
+padding-left: 48px;
+}
+
+#assunto{
+    margin-right: 161px;
+    margin-top: 8px;
+    padding-left: 38px;
+}
+
+#nome{
+    padding-left: 50px;
+}
+
+#enviar{
+    margin-top: 80PX;
+    width: 355px;
+    padding-left: 150px;
+    border-radius: 20px;
+    background-color: rgba(7, 231, 201, 0.76);
 }
