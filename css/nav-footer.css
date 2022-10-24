@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::after,
+*::before  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-size: calc(20px + (30px - 20px) * (100vw - 400px) / (1440 - 400));
+}
+
+body {
+    overflow-x: hidden;
+    margin-top: 15%;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-bottom: 100px;
+    left: 10px;
+    gap: 10px;
+    z-index: 10;
+}
+
+.sociais img {
+    width: 40px;
+}
+
+nav {
+    background-color: rgb(53, 176, 120);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 2vw;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 2vh;
+    font-weight: 700;
+    padding: 1%;
+    border-bottom: 1px solid #23ADD9;
+    z-index: 10;
+}
+
+.nav-left {
+    margin-top: 1vh;
+}
+
+.nav-left ul {
+    margin-top: 2.5vh;
+    display: flex;
+    gap: 1vw;
+    color: white;
+}
+
+.nav-left a {
+    color: white;
+    transition: 1s;
+}
+
+.nav-left li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.nav-right div {
+    display: flex;
+    flex-direction: column;
+}
+
+.doacao {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: 2.5vh 0;
+    padding: 10px 0;
+    box-shadow: 0px 2px black;
+}
+
+.doacao img {
+    width: 2.5vw;
+    height: 2.5vh;
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-right .linguas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+footer {
+    border-top: 2px solid #23ADD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+footer h2 {
+    font-size: 12px;
+    color: #605E5E;
+}
+
+footer img {
+    width: 40px;
+}
+
+@media (max-width: 800px) {
+    
+    body {
+        margin-top: 50%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 80%;
+    }
+}
